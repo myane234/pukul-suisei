@@ -1,0 +1,94 @@
+body {
+    background-color: aquamarine;
+    background-image: url(gambar/suiseiseat.png);
+    background-repeat: no-repeat;
+    background-position: right bottom 17px;
+    background-size: 340px;
+    top: 100px;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: arial;
+}
+
+.sleep {
+    position: absolute;
+    width: 24%;
+    bottom: 28px;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    cursor: url(gambar/palu1.png), auto;
+}
+
+.container:active {
+    cursor: url(gambar/palu2.png), auto;
+}
+
+.mulai {
+    display: block;
+    margin: auto;
+    background-color: crimson;
+    border-radius: 40%;
+    padding: 20px;
+    border-style: none;
+    box-shadow: gray 3px 2px;
+}
+
+.tanah {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    filter: drop-shadow(10px 15px 10px rgb(139, 139, 139));
+}
+
+.tanah::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(gambar/tanah.png) bottom center no-repeat;
+    display: block;
+    background-size: 80%;
+    position: absolute;
+    bottom: -25px; 
+}
+
+.tikus  {
+    width: 100%;
+    height: 100%;
+    background: url(gambar/tikus.png) bottom center no-repeat;
+    background-size: 60%; 
+    position: absolute;
+    top: 100px;  
+    transition: top 0.3s;
+    left: 30px;
+}
+
+.tanah.muncul .tikus {
+    top: 0;
+}
+
+.papan-skor {
+    text-align: center;
+    border: 5px solid rgb(34, 33, 33);
+    background: fixed;
+    background-color: rgb(240, 237, 237);
+    border-radius: 50%;
+    width: 50px;
+    box-shadow: 3px 2px rgb(172, 169, 169);
+}
+
+.congrast {
+    display: none;
+    color: crimson;
+    text-align: center;
+}
+
